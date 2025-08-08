@@ -27,6 +27,11 @@ class Student{
 
     public function addStudent($student_data){
         $students = $this->getAllStudents();
+        foreach($students as $student){
+            if($student['username'] == $student_data['username']){
+                return false;
+            }
+        }
         $student_data['id'] = uniqid();
         $students[] = $student_data;
         file_put_contents($this->fileName, json_encode($students, JSON_PRETTY_PRINT));

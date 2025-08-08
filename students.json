@@ -1,3 +1,23 @@
 [
-    
+    {
+        "name": "Amit sarker",
+        "age": "27",
+        "email": "amitsarker95@gmail.com",
+        "course": "PHP",
+        "id": "6895ccb62a6e6"
+    },
+    {
+        "name": "Amit sarker",
+        "age": "27",
+        "email": "amitsarker95@gmail.com",
+        "course": "PHP",
+        "id": "6895cd9bf3084"
+    },
+    {
+        "name": "Amit sarker",
+        "age": "27",
+        "email": "amitsarker95@gmail.com",
+        "course": "PHP",
+        "id": "6895ce3f34240"
+    }
 ]

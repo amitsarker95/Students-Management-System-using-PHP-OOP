@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = new User($_POST['username'], $_POST['password']);
     if ($user->authenticate()) {
         SessionManager::login($_POST['username']);
-        header('Location: index.php');
+        header('Location: dashboard.php');
         echo 'user found';
         exit();
     } else {
