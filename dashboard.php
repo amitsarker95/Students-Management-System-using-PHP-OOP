@@ -28,8 +28,8 @@ $students = $student->getAllStudents();
         <td><?= $st['email'] ?></td><br>
         <td><?= $st['course'] ?></td><br>
         <td>
-            <a href="edit.php?id=<?= $st['id'] ?>">Edit</a> | 
-            <a href="delete.php?id=<?= $st['id'] ?>" onclick="return confirm('Delete this student?')">Delete</a>
+            <a href="editStudent.php?id=<?= $st['id'] ?>">Edit</a> | 
+            <a href="deleteStudent.php?id=<?= $st['id'] ?>" onclick="return confirm('Delete this student?')">Delete</a>
         </td>
     </tr>
     <?php endforeach; ?>
