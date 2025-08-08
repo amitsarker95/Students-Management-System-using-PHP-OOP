@@ -20,12 +20,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
 }
 ?>
-
+<h2>Edit Student : (<?php echo $student['name'];?>)</h2>
+<hr>
 <form method="POST">
     <input type="hidden" name="id" value="<?= htmlspecialchars($student['id']) ?>">
-    Name: <input type="text" name="name" value="<?= htmlspecialchars($student['name']) ?>"><br>
-    Age: <input type="number" name="age" value="<?= htmlspecialchars($student['age']) ?>"><br>
-    Email: <input type="email" name="email" value="<?= htmlspecialchars($student['email']) ?>"><br>
-    Course: <input type="text" name="course" value="<?= htmlspecialchars($student['course']) ?>"><br>
+    <label for="name">Name: <input type="text" name="name" value="<?= htmlspecialchars($student['name']) ?>"></label><br><br>
+    <label for="age">Age: <input type="number" name="age" value="<?= htmlspecialchars($student['age']) ?>"></label><br><br>
+    <label for="email">Email: <input type="email" name="email" value="<?= htmlspecialchars($student['email']) ?>"></label><br><br>
+    <label for="course">Course: <input type="text" name="course" value="<?= htmlspecialchars($student['course']) ?>"></label><br><br><br>
     <button type="submit">Update</button>
 </form>
